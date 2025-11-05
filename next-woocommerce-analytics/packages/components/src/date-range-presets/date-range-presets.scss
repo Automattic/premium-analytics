@@ -1,0 +1,14 @@
+@use "@wordpress/base-styles/variables" as vars;
+@use "@wordpress/base-styles/colors" as colors;
+
+.date-range-presets {
+	width: 240px;
+
+	.components-menu-item__button.date-range-presets__custom {
+		// Override the disabled item color.
+		color: var(--wpds-color-fg-content-neutral);
+
+		border-top: vars.$border-width solid colors.$gray-300; // core Popover color
+		margin-top: 8px;
+	}
+}

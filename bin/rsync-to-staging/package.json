@@ -1,0 +1,10 @@
+{
+	"name": "rsync-to-staging",
+	"version": "1.0.0",
+	"description": "Rsync deployment script for WooCommerce Analytics plugin",
+	"main": "rsync-to-staging.js",
+	"dependencies": {
+		"chokidar": "^3.5.3",
+		"commander": "^11.0.0"
+	}
+}

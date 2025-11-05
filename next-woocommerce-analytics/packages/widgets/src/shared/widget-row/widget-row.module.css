@@ -1,0 +1,16 @@
+@layer wp-ui-components {
+	.bullet {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.value {
+		text-align: right;
+	}
+
+	.percentage {
+		text-align: right;
+	}
+}

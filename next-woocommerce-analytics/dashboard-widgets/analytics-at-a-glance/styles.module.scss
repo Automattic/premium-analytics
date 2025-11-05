@@ -1,0 +1,82 @@
+@use "@automattic/color-studio/dist/color-variables.scss" as *;
+@use "@wordpress/base-styles/colors" as *;
+@use "@wordpress/base-styles/variables" as *;
+
+:root {
+	--metric-tab-height: 76px;
+}
+
+@layer wp-ui-components {
+	.widgetRoot {
+		height: 100%;
+	}
+
+	.widgetBody {
+		height: 100%;
+	}
+
+	.metricTabsContainer {
+		min-height: var(--metric-tab-height);
+		position: relative;
+		overflow: hidden; // Hide core active tab indicator.
+
+		// Allows widget resizing
+		.metricTabsListWrapper {
+			position: absolute;
+			z-index: 1;
+			inset: 0;
+			width: 100%;
+		}
+	}
+
+	.metricTabsList {
+		padding-bottom: var(--wpds-spacing-10);
+
+		.metricTab {
+			min-height: calc(var(--metric-tab-height) - 4px);
+			margin: 2px;
+			border-radius: var(--wpds-border-radius-large);
+		}
+
+		.metricTab[data-selected] {
+			background-color: var(--wpds-color-bg-interactive-neutral-active);
+			color: var(--wpds-color-fg-interactive-neutral-active);
+		}
+
+		.metricTab::after {
+			margin-top: calc(var(--wpds-spacing-15) * -1);
+			height: 100%;
+			border-radius: var(--wpds-border-radius-large);
+		}
+
+		.metricTabContent {
+			text-align: left;
+			padding: var(--wpds-spacing-15);
+		}
+	}
+
+	.metricTabLabel {
+		font-size: var(--wpds-font-size-small);
+		line-height: var(--wpds-font-line-height-small);
+	}
+
+	.metricTabDescription {
+		max-width: 200px;
+	}
+}
+
+// TODO: consider moving this feature upstream
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global(.next-admin-dashboard-widget-picker__preview) :local(.widgetRoot) {
+	flex-grow: 1;
+	height: 100%;
+	--scale: 0.8;
+}
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global(.next-admin-dashboard-widget-picker__preview) :local(.widgetBody) {
+	width: calc(100% / var(--scale));
+	height: calc(100% / var(--scale));
+	transform: scale(var(--scale));
+	transform-origin: top left;
+}

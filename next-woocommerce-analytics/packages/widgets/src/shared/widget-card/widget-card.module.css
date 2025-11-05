@@ -1,0 +1,119 @@
+@layer wp-ui-components {
+	.root {
+		max-width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		background-color: var(--wpds-color-bg-surface-neutral-strong);
+		border-radius: var(--wpds-border-radius-large);
+		box-shadow: 0 0 0 1px var(--wpds-color-stroke-surface-neutral-weak);
+		padding: var(--wpds-spacing-20);
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		gap: var(--wpds-spacing-30);
+	}
+
+	.header {
+		display: flex;
+		align-items: center;
+		gap: var(--wpds-spacing-05);
+	}
+
+	.body {
+		flex-grow: 1;
+	}
+
+	.tooltip {
+		background-color: var(--wpds-color-bg-surface-neutral-strong) !important;
+		max-width: 280px;
+		text-align: left !important;
+	}
+
+	.category {
+		box-sizing: border-box;
+		display: inline-flex;
+
+		max-width: 100%;
+		gap: var(--wpds-spacing-05);
+
+		span {
+			background-color: var(--wpds-color-bg-surface-info-weak);
+			color: var(--wpds-color-fg-content-neutral);
+			border-radius: var(--wpds-border-radius-small);
+			padding: 2px 6px;
+			font-size: var(--wpds-font-size-x-small);
+		}
+	}
+
+	/* Updating states */
+
+	.is-updating.updating-subtle {
+		opacity: 0.8;
+	}
+
+	.updating-indicator {
+		display: flex;
+		align-items: center;
+		gap: var(--wpds-spacing-05);
+	}
+
+	/* Initial loading overlay with skeleton pulse */
+	.initial-loading-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: var(--wpds-border-radius-large);
+		z-index: 1;
+		animation: skeleton-pulse 1.5s ease-in-out infinite;
+		background-color: var(--wpds-color-bg-surface-neutral-weak);
+	}
+
+	/* Updating overlay with opacity and spinner */
+	.updating-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: var(--wpds-border-radius-large);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+
+	.updating-spinner {
+		width: 16px;
+		height: 16px;
+		border: 2px solid var(--wpds-color-stroke-surface-neutral);
+		border-top: 2px solid var(--wpds-color-stroke-interactive-brand);
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes skeleton-pulse {
+		0% {
+			background-color: var(--wpds-color-bg-surface-neutral-weak);
+		}
+		50% {
+			background-color: var(--wpds-color-bg-surface-neutral);
+		}
+		100% {
+			background-color: var(--wpds-color-bg-surface-neutral-weak);
+		}
+	}
+
+}

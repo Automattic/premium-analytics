@@ -1,0 +1,22 @@
+.reference {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.chart {
+	height: 100% !important;
+	justify-content: space-between;
+}
+
+.legend {
+	margin-top: var(--wpds-spacing-20);
+}

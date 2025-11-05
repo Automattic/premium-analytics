@@ -1,0 +1,23 @@
+{
+	"name": "@next-woo-analytics/dashboard",
+	"version": "0.0.1",
+	"route": {
+		"path": "/wc-analytics/dashboard"
+	},
+	"dependencies": {
+		"@next-woo-analytics/data": "*",
+		"@next-woo-analytics/datetime": "*",
+		"@next-woo-analytics/components": "*",
+		"@next-woo-analytics/icons": "*",
+		"@next-woo-analytics/widgets": "*",
+		"@next-woo-analytics/layout": "*",
+		"@next-woo-analytics/routing": "*",
+		"@tanstack/react-router": "*",
+		"@automattic/admin-toolkit": "*",
+		"@automattic/design-system": "*",
+		"@wordpress/components": "*",
+		"@wordpress/i18n": "*",
+		"date-fns": "*",
+		"@wordpress/preferences": "*"
+	}
+}

@@ -1,0 +1,31 @@
+// Chart Tooltip component styles using WordPress Design System variables
+@use "@automattic/color-studio/dist/color-variables.scss" as *;
+@use "@wordpress/base-styles/colors" as *;
+@use "@wordpress/base-styles/variables" as *;
+
+.tooltip {
+	color: $gray-900;
+	margin: var(--wpds-spacing-10) var(--wpds-spacing-05);
+}
+
+.item {
+	font-weight: $font-weight-regular; // normal
+}
+
+.label {
+	margin-right: var(--wpds-spacing-50);
+}
+
+.value {
+	margin-left: auto;
+	font-size: var(--wpds-font-size-x-small);
+	line-height: $font-line-height-x-small;
+	font-weight: $font-weight-medium;
+}
+
+// Override visx-tooltip default styles that break the layout
+// Todo: address upstream in Charts package.
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global(.visx-tooltip) {
+	max-width: none !important;
+}

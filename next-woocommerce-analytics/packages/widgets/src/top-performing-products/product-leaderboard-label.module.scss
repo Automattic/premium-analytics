@@ -1,0 +1,15 @@
+.container {
+	padding: 6px;
+}
+
+.productImage {
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	border-radius: 4px;
+	object-fit: cover;
+}
+
+.label {
+	font-size: var(--wpds-font-size-small);
+}

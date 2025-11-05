@@ -1,0 +1,52 @@
+{
+	"name": "next-woocommerce-analytics",
+	"version": "1.0.0",
+	"description": "The Next WooCommerce Analytics plugin.",
+	"author": "WooCommerce",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://woocommerce.com/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/woocommerce/woocommerce-analytics.git"
+	},
+	"bugs": {
+		"url": "https://github.com/woocommerce/woocommerce-analytics/issues"
+	},
+	"workspaces": [
+		"packages/*",
+		"routes/*",
+		"dashboard-widgets/*"
+	],
+	"scripts": {
+		"build": "wp-build build",
+		"dev": "wp-build dev",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"preplugin-zip": "npm-run-all preplugin-zip:* build",
+		"preplugin-zip:require-clean-workdir": "test -z \"$(git status --porcelain --untracked=no)\""
+	},
+	"dependencies": {
+		"@automattic/admin-toolkit": "file:../../next-admin/packages/admin-toolkit",
+		"@automattic/boot": "file:../../next-admin/packages/boot",
+		"@automattic/charts": "^0.42.0",
+		"@automattic/color-studio": "^4.1.0",
+		"@automattic/dashboard": "file:../../next-admin/packages/dashboard",
+		"@automattic/design-system": "file:../../next-admin/packages/design-system",
+		"@automattic/grid": "^0.1.1",
+		"@automattic/number-formatters": "^1.0.10",
+		"@automattic/ui": "^1.0.2",
+		"@tanstack/react-query": "^5.83.0",
+		"@tanstack/react-query-devtools": "^5.85.3",
+		"@tanstack/react-router": ">=1.120.5 <1.121.0",
+		"@wordpress/base-styles": "^6.4.0",
+		"@wordpress/components": "^24.0.0",
+		"@wordpress/compose": "^7.28.0",
+		"@wordpress/data": "^10.26.0",
+		"@wordpress/html-entities": "^4.28.0",
+		"@wordpress/preferences": "^4.31.0",
+		"@wordpress/primitives": "^4.26.0"
+	},
+	"devDependencies": {
+		"@automattic/wp-build": "file:../../next-admin/packages/wp-build",
+		"npm-run-all": "^4.1.5"
+	}
+}

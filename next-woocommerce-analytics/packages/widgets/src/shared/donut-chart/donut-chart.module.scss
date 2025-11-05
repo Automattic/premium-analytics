@@ -1,0 +1,32 @@
+@use "@automattic/color-studio/dist/color-variables.scss" as *;
+@use "@wordpress/base-styles/colors" as *;
+@use "@wordpress/base-styles/variables" as *;
+
+@layer wp-ui-components {
+	.chart {
+		position: relative;
+		height: 100%;
+		justify-content: space-between;
+	}
+
+	.chartOverlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.noData {
+		padding: 48px 24px;
+		color: $gray-700;
+	}
+
+	.noDataText {
+		margin: 0;
+		font-size: $font-size-small;
+	}
+
+	.noChart {
+		height: 100%;
+	}
+}

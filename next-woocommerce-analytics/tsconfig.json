@@ -1,0 +1,47 @@
+{
+	"compilerOptions": {
+		"target": "es2019",
+		"lib": [ "dom", "dom.iterable", "esnext" ],
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": false,
+		"jsx": "react-jsx",
+		"types": [ "@types/jest", "@testing-library/jest-dom" ],
+		"baseUrl": ".",
+		"paths": {
+			"@next-woo-analytics/icons": ["./packages/icons/src/index.ts"],
+			"@next-woo-analytics/boot": ["./packages/admin-toolkit/src/index.ts"],
+			"@next-woo-analytics/data": ["./packages/data/src/index.ts"],
+			"@next-woo-analytics/widgets": ["./packages/widgets/src/index.ts"],
+			"@next-woo-analytics/widgets-toolkit": ["./packages/widgets-toolkit/src/index.ts"],
+			"@next-woo-analytics/formatters": ["./packages/formatters/src/index.ts"],
+			"@next-woo-analytics/dashboard": ["./routes/dashboard/src/index.ts"],
+			"@next-woo-analytics/admin-toolkit": ["./packages/admin-toolkit/src/index.ts"],
+			"@next-woo-analytics/components": ["./packages/components/src/index.ts"],
+			"@next-woo-analytics/layout": ["./packages/layout/src/index.ts"],
+			"@next-woo-analytics/routing": ["./packages/routing/src/index.ts"],
+			"@next-woo-analytics/datetime": ["./packages/datetime/src/index.ts"],
+			"@automattic/admin-toolkit": ["../../next-admin/packages/admin-toolkit/src/index.ts"],
+			"@automattic/design-system": ["../../next-admin/packages/design-system/src/index.ts"],
+			"@automattic/theme": ["../../next-admin/packages/theme/src/index.ts"],
+			"@automattic/dashboard": ["../../next-admin/packages/dashboard/src/index.ts"],
+		}
+	},
+	"include": [
+		"routes/**/*",
+		"packages/**/*",
+		"types/**/*",
+		"icons/**/*",
+		"dashboard-widgets/**/*"
+	],
+	"exclude": [ "node_modules", "build", "**/build", "packages/*/build" ]
+}

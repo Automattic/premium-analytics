@@ -1,0 +1,17 @@
+{
+	"name": "@next-woo-analytics/dev-tools",
+	"version": "0.0.1",
+	"route": {
+		"path": "/wc-analytics/dev-tools"
+	},
+	"dependencies": {
+		"@automattic/admin-toolkit": "*",
+		"@automattic/design-system": "*",
+		"@next-woo-analytics/data": "*",
+		"@next-woo-analytics/layout": "*",
+		"@wordpress/components": "*",
+		"@wordpress/i18n": "*",
+		"@next-woo-analytics/routing": "*",
+		"@tanstack/react-router": "*"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "@next-woo-analytics/icons",
+	"description": "WooCommerce Analytics Icons",
+	"version": "1.0.0",
+	"type": "module",
+	"wpModule": true,
+	"main": "src/index.ts",
+	"exports": {
+		".": "./build/src/index.js"
+	},
+	"dependencies": {
+		"@wordpress/primitives": "*",
+		"@wordpress/icons": "*"
+	}
+} 

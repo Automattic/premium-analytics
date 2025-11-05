@@ -1,0 +1,19 @@
+{
+	"name": "widget-analytics-at-a-glance",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"@automattic/design-system": "*",
+		"@automattic/dashboard": "*",
+		"@automattic/charts": "*",
+		"@wordpress/dataviews": "*",
+		"@wordpress/components": "*",
+		"@next-woo-analytics/components": "*",
+		"@next-woo-analytics/datetime": "*",
+		"@next-woo-analytics/data": "*",
+		"@next-woo-analytics/routing": "*",
+		"@next-woo-analytics/widgets": "*",
+		"@next-woo-analytics/widgets-toolkit": "*",
+		"date-fns": "*"
+	}
+}

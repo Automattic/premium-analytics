@@ -1,0 +1,28 @@
+@use "@wordpress/base-styles/mixins" as mixins;
+
+.metricsSelector {
+	margin-bottom: var(--wpds-spacing-30);
+}
+
+.heading {
+	font-size: var(--wpds-font-size-small);
+	font-weight: 500;
+	margin-bottom: var(--wpds-spacing-15);
+	color: var(--wpds-color-fg-content-neutral-weak);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.checkboxList {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--wpds-spacing-10) var(--wpds-spacing-20);
+
+	.checkbox {
+		white-space: nowrap;
+	}
+
+	@include mixins.break-medium() {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

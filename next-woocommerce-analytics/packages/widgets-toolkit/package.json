@@ -1,0 +1,25 @@
+{
+	"name": "@next-woo-analytics/widgets-toolkit",
+	"description": "Widgets Toolkit for WooCommerce Analytics",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "src/index.ts",
+	"exports": {
+		".": "./build/src/index.js"
+	},
+	"dependencies": {
+		"@automattic/design-system": "*",
+		"@automattic/charts": "*",
+		"@next-woo-analytics/components": "*",
+		"@next-woo-analytics/data": "*",
+		"@next-woo-analytics/datetime": "*",
+		"@next-woo-analytics/formatters": "*",
+		"@next-woo-analytics/routing": "*",
+		"@next-woo-analytics/widgets": "*",
+		"@wordpress/components": "*",
+		"@wordpress/compose": "*",
+		"@wordpress/dataviews": "*",
+		"date-fns": "*",
+		"clsx": "*"
+	}
+}

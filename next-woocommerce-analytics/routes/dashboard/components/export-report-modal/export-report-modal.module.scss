@@ -1,0 +1,32 @@
+@use "@wordpress/base-styles/mixins" as mixins;
+
+.heading {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.dateFiltersWrapper {
+	margin-bottom: var(--wpds-spacing-30);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--wpds-spacing-10) var(--wpds-spacing-20);
+
+	@include mixins.break-medium() {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.dateLabel {
+	font-size: var(--wpds-font-size-small);
+	font-weight: 500;
+	color: var(--wpds-color-fg-content-neutral-weak);
+	margin: 0 0 var(--wpds-spacing-10) 0;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.dateValue {
+	font-size: var(--wpds-font-size-medium);
+	color: var(--wpds-color-fg-content-neutral-strong);
+	margin: 0;
+}

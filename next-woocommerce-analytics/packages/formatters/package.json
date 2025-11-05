@@ -1,0 +1,17 @@
+{
+	"name": "@next-woo-analytics/formatters",
+	"description": "Formatting utilities for WooCommerce Analytics",
+	"version": "1.0.0",
+	"type": "module",
+	"wpModule": true,
+	"main": "src/index.ts",
+	"exports": {
+		".": "./build/src/index.js"
+	},
+	"dependencies": {
+		"@automattic/number-formatters": "*",
+		"@wordpress/html-entities": "*",
+		"@wordpress/i18n": "*",
+		"date-fns": "*"
+	}
+}

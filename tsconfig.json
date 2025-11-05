@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		// Target latest version of ECMAScript.
+		"target": "esnext",
+		// Search under node_modules for non-relative imports.
+		"moduleResolution": "bundler",
+		// Process & infer types from .js files.
+		"allowJs": true,
+		"jsx": "preserve",
+		// Import non-ES modules as default imports.
+		"esModuleInterop": true,
+		// Skip type checking of declaration files because some libraries define two copies of the same type in an inconsistent way
+		"skipLibCheck": true,
+		"module": "esnext",
+		"rootDir": "./js/src",
+		"baseUrl": "./js/src",
+		"typeRoots": [ "./node_modules/@types", "./js/types" ],
+		"paths": {
+			"@wordpress-unstable/edit-site": [
+				"__core_unstable_copy__/edit-site/src/index.ts"
+			],
+			"@wordpress-unstable/components": [
+				"__core_unstable_copy__/components/src/index.ts"
+			]
+		}
+	},
+	"include": [ "./js/src/**/*", "./js/types/**/*", "./routes/**/*" ]
+}

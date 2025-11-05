@@ -1,0 +1,12 @@
+{
+	"name": "@next-woo-analytics/reports",
+	"version": "0.0.1",
+	"route": {
+		"path": "/wc-analytics/reports"
+	},
+	"dependencies": {
+		"@automattic/admin-toolkit": "*",
+		"@next-woo-analytics/data": "*",
+		"@wordpress/i18n": "*"
+	}
+}

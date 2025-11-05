@@ -1,0 +1,24 @@
+build
+languages
+node_modules
+vendor
+.phpunit.result.cache
+woocommerce-analytics.zip
+.DS_Store
+# Ignore JSON files in data/mock directory
+js/src/data/mock/*.json
+.vscode
+.idea
+coverage
+features/feature-config.php
+
+*storybook.log
+storybook-static
+.wp-env.override.json
+/jetpack-libs/*
+!/jetpack-libs/.git
+.cursorrules
+.cursor
+CLAUDE.md
+.cursorignore
+.claude

@@ -1,0 +1,30 @@
+.metricValue {
+	font-weight: 500;
+
+	// Size variants
+	&.size--small {
+		font-size: var(--wpds-font-size-small);
+	}
+
+	&.size--medium {
+		font-size: var(--wpds-font-size-large);
+	}
+
+	&.size--large {
+		font-size: var(--wpds-font-size-x-large);
+		line-height: 20px;
+	}
+
+	// Color variants
+	&.color--neutral {
+		color: var(--wpds-color-fg-content-neutral);
+	}
+
+	&.color--positive {
+		color: var(--wpds-color-stroke-surface-success-strong);
+	}
+
+	&.color--negative {
+		color: var(--wpds-color-stroke-surface-error-strong);
+	}
+}

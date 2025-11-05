@@ -1,0 +1,13 @@
+{
+	"name": "widget-orders-over-time",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"@automattic/design-system": "*",
+		"@automattic/dashboard": "*",
+		"@automattic/charts": "*",
+		"@next-woo-analytics/data": "*",
+		"@next-woo-analytics/widgets": "*",
+		"@next-woo-analytics/widgets-toolkit": "*"
+	}
+}
